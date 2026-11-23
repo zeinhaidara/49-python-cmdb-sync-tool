@@ -18,6 +18,11 @@ a second run with the same data changes nothing.
 > data from AWS Config / Azure Resource Graph / GCP Asset Inventory and
 > pushes it into ServiceNow or a custom database.
 
+Why it matters: a CMDB filled in by hand is out of date within weeks, so
+nobody trusts it during an incident. Syncing it from what AWS Config
+actually records, and retiring rows instead of deleting them, keeps it
+current and keeps the history.
+
 ## How it works
 
 ```mermaid
